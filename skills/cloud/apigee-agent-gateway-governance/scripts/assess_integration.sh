@@ -165,7 +165,10 @@ jqf() {  # jqf <json> <python-expr over d> -- no jq dependency
 import json,sys
 try: d=json.loads(sys.stdin.read() or "{}")
 except Exception: d={}
-try: print(eval(sys.argv[1]))
+try:
+    expr = sys.argv[1]
+    scope = {"d": d, "str": str, "next": next, "list": list, "len": len, "bool": bool}
+    print(eval(expr, {"__builtins__": {}}, scope))
 except Exception: print("")
 ' "$1" 2>/dev/null || true
 }
