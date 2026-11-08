@@ -91,7 +91,7 @@ gcloud services enable \
 
 ### 2. Verify setup IAM roles on the caller
 
-Setting up Application Integration requires `roles/integrations.integrationAdmin`, `roles/connectors.admin`, and `roles/editor` (plus `roles/cloudkms.admin` for CMEK). Check current bindings (read-only):
+Setting up Application Integration requires `roles/integrations.integrationAdmin`, `roles/connectors.admin` (plus `roles/cloudkms.admin` for CMEK). Check current bindings (read-only):
 
 ```bash
 gcloud projects get-iam-policy PROJECT_ID --format=json
