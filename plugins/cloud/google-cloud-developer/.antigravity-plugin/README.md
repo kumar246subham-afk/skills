@@ -11,17 +11,17 @@ the **Developer Knowledge MCP server** into a single portable package.
 
 ### Bundled Skills
 
--   **[gcloud](./skills/gcloud)**: Safety-critical validation, best practices,
+-   **[gcloud](../skills/gcloud)**: Safety-critical validation, best practices,
     and execution guardrails for `gcloud` CLI commands.
--   **[google-cloud-recipe-auth](./skills/google-cloud-recipe-auth)**:
+-   **[google-cloud-recipe-auth](../skills/google-cloud-recipe-auth)**:
     Authentication workflows, credential selection, and service identity best
     practices.
--   **[google-cloud-recipe-onboarding](./skills/google-cloud-recipe-onboarding)**:
+-   **[google-cloud-recipe-onboarding](../skills/google-cloud-recipe-onboarding)**:
     First-project onboarding, account setup, and billing configuration.
--   **[finding-google-skills](./skills/finding-google-skills)**: Discovery and
+-   **[finding-google-skills](../skills/finding-google-skills)**: Discovery and
     on-demand installation of specialized skills from the Google Agent Skills
     repo.
--   **[retrieving-developer-knowledge](./skills/retrieving-developer-knowledge)**:
+-   **[retrieving-developer-knowledge](../skills/retrieving-developer-knowledge)**:
     Grounded retrieval of official Google documentation.
 
 ### MCP Server
@@ -32,7 +32,7 @@ the **Developer Knowledge MCP server** into a single portable package.
 
 ### Routing Rules
 
--   **[google-cloud-discovery.md](./rules/google-cloud-discovery.md)**:
+-   **[google-cloud-discovery.md](../rules/google-cloud-discovery.md)**:
     Always-on routing map that guides the agent to discover and suggest deeper
     product-specific skills (such as `gke-*`, `agent-platform-*`,
     `google-cloud-waf-*`, and `<product>-basics`) when a task requires
