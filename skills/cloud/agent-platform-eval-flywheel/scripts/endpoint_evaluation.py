@@ -115,7 +115,7 @@ def run_evaluation(
 
   try:
     jsonl_content = subprocess.run(
-        ["gsutil", "cat", dataset],
+        ["gcloud", "storage", "cat", dataset],
         capture_output=True,
         text=True,
         check=True,
